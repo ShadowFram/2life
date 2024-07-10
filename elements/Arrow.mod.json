@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "potion",
+  "definition": {
+    "potionName": "infection",
+    "splashName": "infection",
+    "lingeringName": "infection",
+    "arrowName": "Стрела с вирусом",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Infection"
+        },
+        "duration": 200,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": false
+      }
+    ]
+  }
+}

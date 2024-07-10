@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "cad",
+    "da "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:arrow"
+    },
+    "b": {
+      "item": "minecraft:spider_eye"
+    },
+    "c": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "d": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "result": {
+    "item": "minecraft:arrow",
+    "count": 8
+  }
+}

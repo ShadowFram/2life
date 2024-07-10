@@ -1,0 +1,9 @@
+{
+  "_fv": 57,
+  "_type": "function",
+  "definition": {
+    "code": "# Enter the function code here\nteam add zombie\nteam modify zombie color dark_green\nteam add Human\n",
+    "name": "teams",
+    "namespace": "mod"
+  }
+}

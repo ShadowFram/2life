@@ -1,0 +1,335 @@
+{
+  "mod_elements": [
+    {
+      "name": "Transformaton",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transformaton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/procedures/TransformatonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/zombie"
+    },
+    {
+      "name": "DayCounter",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_counter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/procedures/DayCounterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DayNumber",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_number",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/procedures/DayNumberProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Infection",
+      "type": "potioneffect",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/potion/InfectionMobEffect.java"
+        ]
+      },
+      "path": "~/zombie"
+    },
+    {
+      "name": "InfectionEffectExpires",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infection_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/procedures/InfectionEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/zombie"
+    },
+    {
+      "name": "Arrow",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/zombie"
+    },
+    {
+      "name": "ZSkin",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "z_skin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/procedures/ZSkinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/zombie"
+    },
+    {
+      "name": "InfectionArrow",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infection_arrow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/life/recipes/infection_arrow.json"
+        ]
+      },
+      "path": "~/zombie"
+    },
+    {
+      "name": "Day",
+      "type": "command",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/command/DayCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ZombieEffect",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zombie_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/procedures/ZombieEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/zombie"
+    },
+    {
+      "name": "Dayadd",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dayadd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/procedures/DayaddProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Adday",
+      "type": "command",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adday",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/command/AddayCommand.java"
+        ]
+      },
+      "path": "~/zombie"
+    },
+    {
+      "name": "ZombieBloodMoon",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zombie_blood_moon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/life/procedures/ZombieBloodMoonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/zombie"
+    },
+    {
+      "name": "Teams",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teams",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/life/functions/teams.mcfunction"
+        ]
+      },
+      "path": "~/zombie"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Zombie",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TicksPassed",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "Days",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.minecraft.potion.effect.arrow": "infection",
+      "item.minecraft.tipped_arrow.effect.arrow": "Стрела с вирусом",
+      "item.minecraft.splash_potion.effect.arrow": "infection",
+      "effect.life.infection": "Зомбификация",
+      "item.minecraft.lingering_potion.effect.arrow": "infection"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "zombie",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "life",
+    "modName": "2Life",
+    "version": "1.0.0",
+    "author": "Shadi, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.life",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

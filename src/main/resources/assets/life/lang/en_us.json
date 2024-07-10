@@ -1,0 +1,7 @@
+{
+  "item.minecraft.potion.effect.arrow": "infection",
+  "item.minecraft.tipped_arrow.effect.arrow": "Стрела с вирусом",
+  "item.minecraft.splash_potion.effect.arrow": "infection",
+  "effect.life.infection": "Зомбификация",
+  "item.minecraft.lingering_potion.effect.arrow": "infection"
+}
