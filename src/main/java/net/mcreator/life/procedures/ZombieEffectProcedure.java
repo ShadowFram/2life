@@ -37,10 +37,10 @@ public class ZombieEffectProcedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 600, 0, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 600, 1, false, false));
-			if (LifeModVariables.WorldVariables.get(world).Days >= 7 && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && !entity.isInWaterRainOrBubble() && world.dayTime() > 0 && world.dayTime() < 18000) {
+			if (LifeModVariables.MapVariables.get(world).Days >= 7 && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && !entity.isInWaterRainOrBubble() && world.dayTime() > 0 && world.dayTime() < 18000) {
 				entity.setSecondsOnFire(3);
 			}
-			if (LifeModVariables.WorldVariables.get(world).Days >= 17 && (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HUNGER) ? _livEnt.getEffect(MobEffects.HUNGER).getAmplifier() : 0) >= 0
+			if (LifeModVariables.MapVariables.get(world).Days >= 17 && (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HUNGER) ? _livEnt.getEffect(MobEffects.HUNGER).getAmplifier() : 0) >= 0
 					&& (entity.getCapability(LifeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LifeModVariables.PlayerVariables())).Zombie == true) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(MobEffects.HUNGER);

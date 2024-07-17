@@ -6,7 +6,7 @@ import net.mcreator.life.network.LifeModVariables;
 
 public class DayaddProcedure {
 	public static void execute(LevelAccessor world) {
-		LifeModVariables.WorldVariables.get(world).Days = world.dayTime() + 23000;
-		LifeModVariables.WorldVariables.get(world).syncData(world);
+		LifeModVariables.MapVariables.get(world).Days = world.dayTime() + 23000;
+		LifeModVariables.MapVariables.get(world).syncData(world);
 	}
 }

@@ -41,7 +41,7 @@ public class ZombieBloodMoonProcedure {
 		boolean sendMessage = false;
 		sendMessage = false;
 		if ((entity.getCapability(LifeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LifeModVariables.PlayerVariables())).Zombie == true && (world instanceof Level _lvl0 && _lvl0.isDay()) == false) {
-			if ((LifeModVariables.WorldVariables.get(world).Days == 10) == (sendMessage == false)) {
+			if ((LifeModVariables.MapVariables.get(world).Days == 10) == (sendMessage == false)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 0, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -58,7 +58,7 @@ public class ZombieBloodMoonProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"/title @a subtitle {\"text\":\"\\u0417\\u043e\\u043c\\u0431\\u0438 \\u0441\\u0442\\u0430\\u043b\\u0438 \\u0441\\u0438\\u043b\\u044c\\u043d\\u0435\\u0435!\",\"bold\":true,\"color\":\"dark_green\"}");
 				sendMessage = true;
-			} else if ((LifeModVariables.WorldVariables.get(world).Days == 20) == (sendMessage == false)) {
+			} else if ((LifeModVariables.MapVariables.get(world).Days == 20) == (sendMessage == false)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 0, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -75,7 +75,7 @@ public class ZombieBloodMoonProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"/title @a subtitle {\"text\":\"\\u0417\\u043e\\u043c\\u0431\\u0438 \\u0441\\u0442\\u0430\\u043b\\u0438 \\u0441\\u0438\\u043b\\u044c\\u043d\\u0435\\u0435!\",\"bold\":true,\"color\":\"dark_green\"}");
 				sendMessage = true;
-			} else if ((LifeModVariables.WorldVariables.get(world).Days == 30) == (sendMessage == false)) {
+			} else if ((LifeModVariables.MapVariables.get(world).Days == 30) == (sendMessage == false)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 0, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -92,7 +92,7 @@ public class ZombieBloodMoonProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"/title @a subtitle {\"text\":\"\\u0417\\u043e\\u043c\\u0431\\u0438 \\u0441\\u0442\\u0430\\u043b\\u0438 \\u0441\\u0438\\u043b\\u044c\\u043d\\u0435\\u0435!\",\"bold\":true,\"color\":\"dark_green\"}");
 				sendMessage = true;
-			} else if ((LifeModVariables.WorldVariables.get(world).Days == 40) == (sendMessage == false)) {
+			} else if ((LifeModVariables.MapVariables.get(world).Days == 40) == (sendMessage == false)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 0, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -109,7 +109,7 @@ public class ZombieBloodMoonProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"/title @a subtitle {\"text\":\"\\u0417\\u043e\\u043c\\u0431\\u0438 \\u0441\\u0442\\u0430\\u043b\\u0438 \\u0441\\u0438\\u043b\\u044c\\u043d\\u0435\\u0435!\",\"bold\":true,\"color\":\"dark_green\"}");
 				sendMessage = true;
-			} else if (LifeModVariables.WorldVariables.get(world).Days == 50 && sendMessage == false) {
+			} else if (LifeModVariables.MapVariables.get(world).Days == 50 && sendMessage == false) {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Message"), false);
 				sendMessage = true;

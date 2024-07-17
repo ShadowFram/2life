@@ -282,13 +282,13 @@
     {
       "name": "TicksPassed",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "Days",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     }
   ],

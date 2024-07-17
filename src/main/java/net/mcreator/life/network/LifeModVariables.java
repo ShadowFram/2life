@@ -117,8 +117,6 @@ public class LifeModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "life_worldvars";
-		public double TicksPassed = 0;
-		public double Days = 0;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -127,14 +125,10 @@ public class LifeModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			TicksPassed = nbt.getDouble("TicksPassed");
-			Days = nbt.getDouble("Days");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.putDouble("TicksPassed", TicksPassed);
-			nbt.putDouble("Days", Days);
 			return nbt;
 		}
 
@@ -157,6 +151,8 @@ public class LifeModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "life_mapvars";
+		public double TicksPassed = 0;
+		public double Days = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -165,10 +161,14 @@ public class LifeModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			TicksPassed = nbt.getDouble("TicksPassed");
+			Days = nbt.getDouble("Days");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putDouble("TicksPassed", TicksPassed);
+			nbt.putDouble("Days", Days);
 			return nbt;
 		}
 

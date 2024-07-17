@@ -25,7 +25,7 @@ public class DayCounterProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
-		LifeModVariables.WorldVariables.get(world).Days = Math.floor(world.dayTime() / 24000);
-		LifeModVariables.WorldVariables.get(world).syncData(world);
+		LifeModVariables.MapVariables.get(world).Days = Math.floor(world.dayTime() / 24000);
+		LifeModVariables.MapVariables.get(world).syncData(world);
 	}
 }
